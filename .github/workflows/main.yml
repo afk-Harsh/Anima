@@ -23,7 +23,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secretsAWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1  # ya jo region tu use kar raha ho
 
       - name: Deploy to S3
